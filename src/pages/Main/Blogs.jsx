@@ -21,7 +21,7 @@ export default function Blogs() {
   }
 
   return (
-    <div className='container mx-auto grid grid-cols-3'>
+    <div className=' grid grid-cols-3'>
       {loading ? (
         <div className='absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 '>
           <div className='border-t-transparent border-solid animate-spin  rounded-full border-blue-400 border-8 h-40 w-40 '></div>

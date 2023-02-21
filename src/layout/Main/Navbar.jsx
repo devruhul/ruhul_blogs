@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className='navbar bg-base-100'>
+    <div className='navbar bg-gray-900'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost btn-circle'>
@@ -24,7 +24,7 @@ export default function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
+            className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-900 rounded-box w-52'
           >
             <li>
               <Link to='blogs'>Blogs</Link>
@@ -44,13 +44,13 @@ export default function Navbar() {
         </Link>
       </div>
       <div className='navbar-end flex justify-evenly items-center'>
-        <Link to='/blogs' className='btn btn-circle'>
+        <Link to='/blogs' className='btn'>
           Blogs
         </Link>
-        <Link to='/about' className='btn btn-circle'>
+        <Link to='/about' className='btn'>
           About
         </Link>
-        <Link to='/contact' className='btn btn-circle'>
+        <Link to='/contact' className='btn'>
           Contact
         </Link>
       </div>
