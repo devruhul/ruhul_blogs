@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Blogs from "../../pages/Main/Blogs";
 
 export default function Navbar() {
   return (
@@ -27,13 +28,16 @@ export default function Navbar() {
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-900 rounded-box w-52'
           >
             <li>
-              <Link to='blogs'>Blogs</Link>
+              <Link to='/blogs'>Blogs</Link>
             </li>
             <li>
-              <Link to='about'>About</Link>
+              <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='contact'>Contact</Link>
+              <Link to='/dashboard'>Dashboard</Link>
+            </li>
+            <li>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </div>
@@ -49,6 +53,9 @@ export default function Navbar() {
         </Link>
         <Link to='/about' className='btn'>
           About
+        </Link>
+        <Link to='/dashboard' className='btn'>
+          Dashboard
         </Link>
         <Link to='/contact' className='btn'>
           Contact

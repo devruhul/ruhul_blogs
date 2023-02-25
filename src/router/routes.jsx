@@ -6,7 +6,8 @@ import Dashboard from "../layout/Dashboard/Dashboard";
 import About from "../pages/Main/About";
 import Blogs from "../pages/Main/Blogs";
 import Contact from "../pages/Main/Contact";
-import AddProduct from "../pages/Dashboard/AddProduct";
+import AddProduct from "../pages/Dashboard/components/AddProduct";
+import UpdateBlog from "../pages/Dashboard/components/UpdateBlog";
 
 // create all routes
 const routes = createBrowserRouter([
@@ -43,13 +44,13 @@ const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/dashboard",
+        path: "/dashboard/new-blog",
         element: <AddProduct />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "add-product",
-        element: <AddProduct />,
+        path: "/dashboard/update-blog",
+        element: <UpdateBlog />,
         errorElement: <ErrorPage />,
       },
     ],

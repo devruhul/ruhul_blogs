@@ -11,8 +11,8 @@ export default function Home() {
   const dispatch = useDispatch();
   // fetch news api
   useEffect(() => {
-    dispatch(loadingBlogs());
-    dispatch(fetchNewsBlogs());
+    // dispatch(loadingBlogs());
+    // dispatch(fetchNewsBlogs());
   }, []);
   return (
     <div className='bg-gray-900 '>

@@ -1,12 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { matchPath, matchRoutes, Outlet, useLocation } from "react-router-dom";
+import AddProduct from "../../pages/Dashboard/components/AddProduct";
+import ErrorPage from "../../pages/ErrorPage";
+import Navbar from "../Main/Navbar";
 import Sidebar from "./Sidebar";
 
 export default function Dashboard() {
-  return (
-    <div>
-      <Sidebar />
-      <Outlet />
-    </div>
-  );
+  // get current route
+  const matchRoute = useLocation();
+
+  console.log(matchRoute.pathname);
+  return <div>{matchRoute ? <Sidebar /> : <Navbar />}</div>;
 }

@@ -12,8 +12,8 @@ export default function Blogs() {
   console.log(blogs, loading, error);
   // fetch news api
   useEffect(() => {
-    dispatch(loadingBlogs());
-    dispatch(fetchNewsBlogs());
+    // dispatch(loadingBlogs());
+    // dispatch(fetchNewsBlogs());
   }, []);
 
   if (error) {
